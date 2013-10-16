@@ -33,6 +33,10 @@
 		<xsl:value-of select="@name" />
 		<xsl:text>:</xsl:text>
 		<xsl:value-of select="datatype" />
+		<xsl:choose>
+			<xsl:when test="@null = 0"></xsl:when>
+				<xsl:otherwise>:nullable</xsl:otherwise>
+		</xsl:choose>
 		<xsl:if test="not (position()=last())">
 				<xsl:text>, </xsl:text>
 		</xsl:if> 
@@ -48,3 +52,4 @@
 
 </xsl:template>
 </xsl:stylesheet>
+
