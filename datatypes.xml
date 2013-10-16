@@ -10,7 +10,7 @@
 	</group>
 
 	<group label="Character" color="rgb(255,200,200)">
-		<type label="Varchar" length="1" sql="VARCHAR"  quote="'"/>
+		<type label="string" length="1" sql="string"  quote="'"/>
 	</group>
 
 	<group label="Date &amp; Time" color="rgb(200,255,200)">
